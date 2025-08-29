@@ -1,8 +1,11 @@
-"""
-@author: Bruno Adele
-@handle: badele
-@repository: https://github.com/badele/gitcheck?tab=readme-ov-file
-"""
+'''
+ Author:       Bruno Adele
+ Author Mail:  
+ Handle:       badele
+ Repository:   https://github.com/badele/gitcheck?tab=readme-ov-file
+ License:      
+ License URI:  
+'''
 
 #!/usr/bin/env python
 
