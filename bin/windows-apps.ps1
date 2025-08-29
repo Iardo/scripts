@@ -64,6 +64,11 @@ function List_Downloads {
             url  = "https://files2.freedownloadmanager.org/6/latest/fdm_x64_setup.exe"
         }
         [PsCustomObject]@{
+            name = "Icaros"
+            file = "icaros-3.3.4b1.exe"
+            url  = "https://github.com/Xanashi/Icaros/releases/download/v3.3.4b1/Icaros_v3.3.4_b1.exe"
+        }
+        [PsCustomObject]@{
             name = "Imgbrd Grabber"
             file = "imgbrd-grabber-7.13.0.exe"
             url  = "https://github.com/Bionus/imgbrd-grabber/releases/download/v7.13.0/Grabber_v7.13.0_x64.exe"
