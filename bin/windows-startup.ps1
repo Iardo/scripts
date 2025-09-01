@@ -11,7 +11,15 @@ $launcher = "C:\Program Files\ueli\Ueli.exe"
 $winxmove = "C:\Program Files\win-x-move\1.1\winxmove.exe"
 
 # -------------------- #
-Start-Process -FilePath $taskbar
-Start-Process -FilePath $windows
-Start-Process -FilePath $launcher
-Start-Process -FilePath $winxmove
+if (-Not (Get-Process -Name "yasb" -ErrorAction SilentlyContinue)) {
+    Start-Process -FilePath $taskbar
+}
+if (-Not (Get-Process -Name "glazewm" -ErrorAction SilentlyContinue)) {
+    Start-Process -FilePath $windows
+}
+if (-Not (Get-Process -Name "Ueli" -ErrorAction SilentlyContinue)) {
+    Start-Process -FilePath $launcher
+}
+if (-Not (Get-Process -Name "winxmove" -ErrorAction SilentlyContinue)) {
+    Start-Process -FilePath $winxmove
+}
